@@ -71,7 +71,7 @@ html_category.xpath("//a[@class='product-name']").each do |product|
 end
 
 puts "\n", "creating file..."
-#creating csv file
+#creating csv filee
 CSV.open("./#{filename}.csv", "wb") do |csv|
   data.each do |item|
     for i in 0..(item["product_price"]["cost"].length - 1) do
